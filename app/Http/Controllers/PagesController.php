@@ -7,12 +7,21 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function index() {
-        return view('pages.index');
+        $headline = "Home Page || BD Model Test";
+        return view('pages.index')->with(
+            'headline', $headline
+        );
     }
     public function about() {
-        return view('pages.about');
+        $headline = "About Us || BD Model Test";
+        return view('pages.about')->with(
+            'headline', $headline
+        );
     }
     public function services() {
-        return view('pages.services');
+        $headline = "Services || BD Model Test";
+        return view('pages.services')->with(
+            'headline', $headline
+        );
     }
 }
