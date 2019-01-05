@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function index() {
-        $headline = "Home Page || BD Model Test";
+        $headline = "BD Model Test";
         return view('pages.index')->with(
             'headline', $headline
         );
