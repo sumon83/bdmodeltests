@@ -2,88 +2,9 @@
 
 @section('content')
         
-        <header>           
-                <div class="container">
-                        <div class="row header">
-                            <div class="col-xs-12 col-sm-8 logo">
-                                <a class="logo-img" href="">
-                                    <img class="img-responsive" src=" assets/img/logo.png " alt="BD Model Test" />    
-                                </a>
-                                <div class="site-title">
-                                    <h1><a href="">{{$headline}}</a></h1>
-                                    <p>A handy tool to test your skills</p>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-4 pull-right">
-                                <p class="log-reg pull-right">
-                                    
-                                    <a href="   ('users');">Login</a> <span>|</span><a href="   ('student-registration') ">Registration</a>
-                                    
-                                    <a href="   ('logout');">Logout</a>
-                                    
-                                    </p>
-                                <p class="fa fa-phone pull-right clr-both"><span>01719287625</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-icons">
-                        <ul>
-                            <li>
-                                <a class="btn btn-social-icon btn-facebook btn-xs" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a class="btn btn-social-icon btn-google-plus btn-xs" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a class="btn btn-social-icon btn-twitter btn-xs" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                        </ul>
-                    </div>                                        
-            </header>
+        @include('layouts.header')
             <section class="nav-banner">
-                <nav>
-                    <div class="container mainnav">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="navbar navbar-default" role="navigation">
-                                    <div class="navbar-header" data-toggle="collapse" data-target=".navbar-collapse">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                        <a class="navbar-brand" href="#">Main Menu</a>
-                                    </div>
-                                    <div class="navbar-collapse collapse">
-                                        <nav>
-                                                <div class="container mainnav">
-                                                    <div class="row">
-                                                        <div class="col-xs-12">
-                                                            <div class="navbar navbar-default" role="navigation">
-                                                                <div class="navbar-header" data-toggle="collapse" data-target=".navbar-collapse">
-                                                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                                                        <span class="sr-only">Toggle navigation</span>
-                                                                        <span class="icon-bar"></span>
-                                                                        <span class="icon-bar"></span>
-                                                                        <span class="icon-bar"></span>
-                                                                    </button>
-                                                                    <a class="navbar-brand" href="#">Main Menu</a>
-                                                                </div>
-                                                                <div class="navbar-collapse collapse">
-                                                                    <ul class="nav navbar-nav"><li class="  first"><a href="http:localhost/bdmodeltest/about-us">About Us</a></li><li class="  item-2"><a href="http:localhost/bdmodeltest/model-test">Model Test</a></li><li class="  item-3"><a href="http:localhost/bdmodeltest/old-model-test">Old Model Test</a></li><li class="  item-4"><a href="http:localhost/bdmodeltest/practice">Practice</a></li><li class=" last item-5"><a href="http:localhost/bdmodeltest/contact-us">Contact Us</a></li></ul>                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </nav>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+                @include('menus.nav')
                 <div class="banner">
                     <div class="container">
                         <div class="girl-img">

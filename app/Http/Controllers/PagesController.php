@@ -7,10 +7,12 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function index() {
-        $headline = "BD Model Test";
-        return view('pages.index')->with(
-            'headline', $headline
+        $headline = array(
+            'headline' => "BD Model Test",
+            'slogan' => "A handy tool to test your skills",
         );
+       
+        return view('pages.index')->with( $headline);
     }
     public function about() {
         $headline = "About Us || BD Model Test";
