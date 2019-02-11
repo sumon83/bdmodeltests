@@ -16,6 +16,13 @@
 }); */
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
+Route::get('/model_tests', 'PagesController@model_tests');
+Route::get('/teachers', 'PagesController@teachers');
+Route::get('/students', 'PagesController@students');
+Route::get('/blogs', 'PagesController@blogs');
+Route::get('/contact_us', 'PagesController@contact_us');
+Route::get('/services', 'PagesController@services');
+Route::get('/services', 'PagesController@services');
 Route::get('/services', 'PagesController@services');
 
 

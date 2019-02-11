@@ -15,15 +15,52 @@ class PagesController extends Controller
         return view('pages.index')->with( $headline);
     }
     public function about() {
-        $headline = "About Us || BD Model Test";
-        return view('pages.about')->with(
-            'headline', $headline
+        $headline = array(
+            'headline' => "BD Model Test",
+            'slogan' => "A handy tool to test your skills",
         );
+        
+        return view('pages.about')->with($headline);
     }
-    public function services() {
-        $headline = "Services || BD Model Test";
-        return view('pages.services')->with(
-            'headline', $headline
+    public function model_tests() {
+        $headline = array(
+            'headline' => "BD Model Test",
+            'slogan' => "A handy tool to test your skills",
         );
+        return view('pages.model_tests')->with($headline);
     }
+    public function teachers() {
+        $headline = array(
+            'headline' => "BD Model Test",
+            'slogan' => "A handy tool to test your skills",
+        );
+        return view('pages.teachers')->with( $headline );
+    }
+    public function students() {
+        $headline = array(
+            'headline' => "BD Model Test",
+            'slogan' => "A handy tool to test your skills",
+        );
+        return view('pages.students')->with( $headline );
+    }
+    public function blogs() {
+        $headline = array(
+            'headline' => "BD Model Test",
+            'slogan' => "A handy tool to test your skills",
+        );
+        return view('pages.blogs')->with($headline);
+    }
+    public function contact_us() {
+        $headline = array(
+            'headline' => "BD Model Test",
+            'slogan' => "A handy tool to test your skills",
+        );
+        return view('pages.contact_us')->with($headline);
+    }
+    // public function services() {
+    //     $headline = "Services || BD Model Test";
+    //     return view('pages.services')->with(
+    //         'headline', $headline
+    //     );
+    // }
 }
