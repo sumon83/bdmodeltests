@@ -57,6 +57,13 @@ class PagesController extends Controller
         );
         return view('pages.contact_us')->with($headline);
     }
+    public function login() {
+        $headline = array(
+            'headline' => "BD Model Test",
+            'slogan' => "A handy tool to test your skills"
+        );
+        return view('pages.login')->with( $headline);
+    }
     // public function services() {
     //     $headline = "Services || BD Model Test";
     //     return view('pages.services')->with(

@@ -22,8 +22,8 @@ Route::get('/students', 'PagesController@students');
 Route::get('/blogs', 'PagesController@blogs');
 Route::get('/contact_us', 'PagesController@contact_us');
 Route::get('/services', 'PagesController@services');
-Route::get('/services', 'PagesController@services');
-Route::get('/services', 'PagesController@services');
+Route::get('/login', 'PagesController@login');
+//Route::get('/services', 'PagesController@services');
 
 
 Route::resource('posts', 'PostsController');
