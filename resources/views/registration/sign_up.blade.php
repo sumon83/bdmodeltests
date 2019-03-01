@@ -6,7 +6,7 @@
                 @include('menus.nav')   
                 <div class="container">
                         <h1>Signu up as a Teacher in BD Model Test</h1>
-                        {!! Form::open(['action' => 'PagesController@sign_up', 'method'=>'POST']) !!}
+                        {!! Form::open(['action' => 'RegistrationController@registrar', 'method'=>'POST']) !!}
                         <div class="form_group">
                                 {{ Form::label('name', 'Full Name') }}
                                 {{ Form::text('full_name', '', ['class' => 'form-control', 'placeholder' => 'Full Name', 'id' => 'full_name'])}}                                

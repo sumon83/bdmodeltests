@@ -22,8 +22,12 @@ Route::get('/students', 'PagesController@students');
 Route::get('/blogs', 'PagesController@blogs');
 Route::get('/contact_us', 'PagesController@contact_us');
 Route::get('/services', 'PagesController@services');
-Route::get('/login', 'PagesController@login');
-Route::get('/sign_up', 'PagesController@sign_up');
+Route::get('/login', 'RegistrationController@login');
+Route::get('/sign_up', 'RegistrationController@sign_up');
+//Route::get('/services', 'PagesController@services');
+
+
+Route::post('/registrar', 'RegistrationController@registrar');
 //Route::get('/services', 'PagesController@services');
 
 
