@@ -27,7 +27,7 @@ Route::get('/sign_up', 'RegistrationController@sign_up');
 //Route::get('/services', 'PagesController@services');
 
 
-Route::post('/registrar', 'RegistrationController@registrar');
+Route::post('/registrar', 'RegistrationController@registrarStore');
 //Route::get('/services', 'PagesController@services');
 
 
