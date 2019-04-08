@@ -23,12 +23,14 @@ Route::get('/blogs', 'PagesController@blogs');
 Route::get('/contact_us', 'PagesController@contact_us');
 Route::get('/services', 'PagesController@services');
 Route::get('/login', 'RegistrationController@login');
-Route::get('/sign_up', 'RegistrationController@sign_up');
+//Route::get('/sign_up', 'RegistrationController@create');
 //Route::get('/services', 'PagesController@services');
 
 
-Route::post('/registrar', 'RegistrationController@registrarStore');
+//Route::post('/registrar', 'RegistrationController@registrarStore');
 //Route::get('/services', 'PagesController@services');
 
 
+Route::resource('registrar', 'RegistrationController');
+//Route::resource('/create', 'RegistrationController');
 Route::resource('posts', 'PostsController');

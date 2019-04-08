@@ -1,3 +1,7 @@
+<?php 
+    $headline = "BD Model Test"; 
+    $slogan = "A handy tool to test your skills";
+?>
 <header>           
     <div class="container">
             <div class="row header">
@@ -6,14 +10,14 @@
                         <img class="img-responsive" src=" {{asset('img/logo.png')}}" alt="BD Model Test" />    
                     </a>
                     <div class="site-title">
-                        <h1><a href="">{{$headline}}</a></h1>
-                        <p>{{$slogan}}</p>
+                        <h1><a href=""><?= $headline; ?></a></h1>
+                        <p><?= $slogan;?></p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 pull-right">
                     <p class="log-reg pull-right">
                         
-                        <a href="{{url('/login')}}">Login</a> <span>|</span><a href="  {{url('/sign_up')}} ">Registration</a>
+                        <a href="{{url('/login')}}">Login</a> <span>|</span><a href="  {{url('registrar/create')}} ">Registration</a>
                         
                         <a href="{{url('logout')}}">Logout</a>
                         
